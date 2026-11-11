@@ -171,3 +171,32 @@ nav ul a{
 nav ul a:hover{
     background-color: aquamarine;
 }
+
+/* ***********************************************
+                 midea queries
+************************************************ */
+
+@media screen and (min-width:640px){
+    /* this media query applies at 640px and above */
+
+    .flexer{
+        display: flex;
+        /* gap can be used to put spaces between fixed elements */
+        gap: 1em;
+    }
+
+    main{
+        flex-grow:3;
+
+        display: flex;
+        /* use justify content to spread out the flexbox
+        examples in main to take up the same amount of space ias the larger aside */
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+
+    aside{
+        flex-grow: 1;
+    }
+}
